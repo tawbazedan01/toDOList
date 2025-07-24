@@ -43,7 +43,7 @@ export default function ToDoList() {
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="أدخل مهمة جديدة"
+          placeholder="Add New Task"
           style={{ width: '100%', padding: '8px', marginBottom: '10px' }}
         />
         <button type="submit" style={{ padding: '8px 16px' }}>
@@ -71,7 +71,7 @@ export default function ToDoList() {
               {todo.text}
             </span>
             <button onClick={() => dispatch({ type: 'DELETE', payload: todo.id })}>
-              حذف
+              Delete 
             </button>
           </li>
         ))}
