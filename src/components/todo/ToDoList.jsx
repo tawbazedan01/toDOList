@@ -47,7 +47,7 @@ export default function ToDoList() {
           style={{ width: '100%', padding: '8px', marginBottom: '10px' }}
         />
         <button type="submit" style={{ padding: '8px 16px' }}>
-          أضف المهمة
+            Add Task
         </button>
       </form>
 
