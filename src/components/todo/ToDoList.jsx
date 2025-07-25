@@ -47,7 +47,7 @@ export default function ToDoList() {
           style={{ width: '100%', padding: '8px', marginBottom: '10px' }}
         />
         <button type="submit" style={{ padding: '8px 16px' }}>
-            Add Task
+          Add Task
         </button>
       </form>
 
@@ -71,7 +71,7 @@ export default function ToDoList() {
               {todo.text}
             </span>
             <button onClick={() => dispatch({ type: 'DELETE', payload: todo.id })}>
-              Delete 
+              Delete
             </button>
           </li>
         ))}
