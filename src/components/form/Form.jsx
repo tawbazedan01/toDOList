@@ -10,20 +10,25 @@ export default function Form() {
     return (
         <div>
             <form onSubmit={handleSubmit(onSubmit)} className={style.form}>
-                <div className={style.formGroup}>
+                <div className={style.inputGroup}>
                     <label className={style.label}>Name:</label>
                     <input {...register('name', { required: true })} className={style.input} />
-                    {errors.name && <span className={style.error}>Name is required</span>}
+                    {errors.name && (
+                        <div className={style.error}>Name is required</div>
+                    )}
                 </div>
 
-                <div className={style.formGroup}>
+                <div className={style.inputGroup}>
                     <label className={style.label}>Email:</label>
                     <input type="email" {...register('email', { required: true })} className={style.input} />
-                    {errors.email && <span className={style.error}>Email is required</span>}
+                    {errors.email && (
+                        <div className={style.error}>Email is required</div>
+                    )}
                 </div>
 
                 <button type="submit" className={style.button}>Submit</button>
             </form>
+
 
         </div>
     )
